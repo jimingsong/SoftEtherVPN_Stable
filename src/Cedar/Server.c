@@ -1410,7 +1410,7 @@ void GetServerCapsMain(SERVER *s, CAPSLIST *t)
 		return;
 	}
 
-	is_restricted = SiIsEnterpriseFunctionsRestrictedOnOpenSource(s->Cedar);
+	//is_restricted = SiIsEnterpriseFunctionsRestrictedOnOpenSource(s->Cedar);
 
 	// Initialize
 	InitCapsList(t);
