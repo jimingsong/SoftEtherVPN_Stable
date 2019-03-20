@@ -1,3 +1,11 @@
+-VPN进阶 静态路由表推送（拆分隧道）
+-- 服务端设置
+"虚拟NAT和虚拟DHCP服务器" -> "Secure配置(C)" -> 无需填写 "默认网关地址"；配置静态路由表推功能(拆分隧道)
+
+-- 客户端设置
+a. 使用windows vpn工具 如l2tp协议. 从VPN连接属性开始（假定你已经创建了VPN连接并且一切正常），依次选择“网络”选项卡、“Internet 协议版本 4(TCP/IP IPv4)”、“属性”、“高级”，将“在远程网络上使用默认网关”的勾取消掉，保存。这样再连接VPN时，就只有送往推送路由表中网段的数据会经由VPN隧道进行传输了。
+b. SoftEther Clent  默认使用
+
 SoftEther VPN (Stable Edition Repository)
 - An Open-Source Cross-platform Multi-protocol VPN Program
 https://www.softether.org/
