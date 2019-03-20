@@ -1365,7 +1365,7 @@ void UpdateGlobalServerFlags(SERVER *s, CAPSLIST *t)
 		return;
 	}
 
-	is_restricted = SiIsEnterpriseFunctionsRestrictedOnOpenSource(s->Cedar);
+	//is_restricted = SiIsEnterpriseFunctionsRestrictedOnOpenSource(s->Cedar);  //开放部分高级功能
 
 	SetGlobalServerFlag(GSF_DISABLE_PUSH_ROUTE, is_restricted);
 	SetGlobalServerFlag(GSF_DISABLE_RADIUS_AUTH, is_restricted);
